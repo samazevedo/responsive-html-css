@@ -39,19 +39,13 @@ header {
     color: #bdbdbd;
     margin-left: 20px;
 }
-.nav-item:hover {
+.nav-item:hover:not(.active-link) {
     color: #333;
-}
-
-/* .navigation-item:first-child {
-    margin-left: 0;
-} */
-.nav-item:active {
-    color: #333333;
 }
 .navigation-btn {
     border: none;
 }
+
 .logo {
     display:flex;
     padding: 10px;
@@ -66,7 +60,13 @@ header {
 .logo a{
     text-decoration: none;
 }
-
+.active-link {
+   color: #6ed245;
+}
+.active-link:hover {
+    color:##6ed245;
+    cursor: auto;
+}
 .navigation-btn{
     border:none;
     background: linear-gradient(90deg, rgba(157,154,209,1) 0%, rgba(39,237,154,1) 50%, rgba(29,255,0,1) 100%);
@@ -129,9 +129,14 @@ main {
 footer {
     display:flex;
     color:#bdbdbd;
+    justify-content: center;
+    align-items: center;
+    
 }
 .socials {
     margin-right: 40px;
+    font-size: 1rem;
+    display:flex;
     
 }
 .socials-item {
@@ -149,7 +154,50 @@ footer {
     font-size: 1.5rem;
     display: none;
 }
-
+.contact-form {
+    display:flex;
+    flex-wrap:wrap;
+}
+.contact-form p {
+    color:#4bb086;
+}
+.contact-form form {
+    display:flex;
+    flex-direction: column;
+    padding: 10px;
+    margin:10px;
+    width:100%;
+}
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 10px;
+    border: 1px #bdbdbd solid;
+}
+.submit-btn {
+    border: none;
+    padding: 10px;
+    background:transparent;
+    border-radius: 5px;
+    max-width:100px;
+    align-text:center;
+    border: 1px solid #e0e0e0;
+    background: -webkit-linear-gradient(
+        90deg,
+        rgba(131,125,241,1) 45%,
+        rgba(75,176,134,1) 76%,
+        rgba(61,150,88,1) 100%);
+    );
+    background-clip: text;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    margin-top: 10px;
+}
+#more-info {
+    margin-bottom:20px;
+}
 
 /* MOBILE NAVIGATION */
 .mobile-header {
@@ -181,17 +229,16 @@ footer {
 }
 .mobile-nav-item {
     display:block;
-    color: #bdbdbd;
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
-.mobile-nav-item:hover {
-    color:#333;
+.mobile-nav-item:not(.active-link) {
+    color: #bdbdbd;
 }
-.mobile-nav-item:active {
-    display:block;
-    color:#333333 ;
+.mobile-nav-item:hover:not(.active-link) {
+    color:#333333;
 }
+
 
 @media only screen and (max-width: 660px){
     main {

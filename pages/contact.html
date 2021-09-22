@@ -17,7 +17,7 @@
     <div class="mobile-header" id="mobile-nav">
         <div class="mobile-top">
             <div class=" logo">
-                <a href="#">Responsive</a>
+                <a href="../index.html">Responsive</a>
             </div>
             <div class="close-menu-btn">
                 <button  id="btn-close">
@@ -26,10 +26,10 @@
             </div>
         </div>
         <div class="mobile-nav-header">
-            <a href="" class="mobile-nav-item mobile-nav-item_active">Home</a>
-            <a href="" class="mobile-nav-item">About</a>
-            <a href="" class="mobile-nav-item">Services</a>
-            <a href="" class="mobile-nav-item">Contact</a>   
+            <a href="../index.html" class="mobile-nav-item">Home</a>
+            <a href="./about.html" class="mobile-nav-item">About</a>
+            <a href="./services.html" class="mobile-nav-item">Services</a>
+            <a href="./contact.html" class="mobile-nav-item active-link">Contact</a>   
         </div>        
     </div>
     
@@ -41,10 +41,10 @@
         <header>
             <div class="logo"><a href="#">Responsive</a> </div>
             <nav class="navigation">
-                <a href="" class="nav-item nav-item_active">Home</a>
-                <a href="" class="nav-item">About</a>
-                <a href="" class="nav-item">Services</a>
-                <a href="" class="nav-item">Contact</a> 
+                <a href="../index.html" class="nav-item">Home</a>
+                <a href="./about.html" class="nav-item">About</a>
+                <a href="./services.html" class="nav-item">Services</a>
+                <a href="./contact.html" class="nav-item active-link">Contact</a> 
             </nav>
             <div class="menu-btn" >
                 <button id="btn-open">
@@ -55,19 +55,30 @@
         </header>
         <main>
             <div class="main-content">
-                <h1 class="headline">Responsive Me</h1>
+                <h1 class="headline">Contact Us</h1>
                 <p class="description">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing 
-                    elit. Aliquam maiores repellat neque optio inventore 
-                    possimus dolores assumenda obcaecati fugit corrupti.
+                    For more information about our services, pricing and more, you can each us
+                    through the form, email or phone number.
                 </p>
-                <button class="play-btn">
-                    <i class="fa fa-play-circle">Discover Video</i> 
-                </button>
+                <div class="contact-form">
+                    <p></p>
+                    <form action="../index.html" target="_black">
+                        <label for="name" aria-placeholder="name">Name:</label>
+                        <input type="text" id="name" autocomplete="name">    
+                        <label for="email" aria-placeholder="email">Email:</label>
+                        <input type="email" id="email" autocomplete="emal">
+                        <label for="message">Message:</label>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </form>
+                </div>
+                <div id="more-info">
+                    <a href="mailto:responsive@responsive.com">Email: responsive@responsive.com</a><br/>
+                    <a href="tel:+55011997262449">Tel.:  +1 123 1234 123</a>  
+                </div>
             </div>
-            <div class="main-img">
-                <img src="/img/main-img.jpg" alt="main image">
-            </div>
+            
+            
         </main>
         <footer>
             <div class="socials">
