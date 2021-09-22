@@ -20,7 +20,7 @@ button {
     cursor: pointer;
 }
 #container {
-    max-width: 1200px;
+    max-width: 900px;
     padding: 24px;
     margin: 0 auto;
     display:grid;
